@@ -117,7 +117,7 @@ export default class SubMenu extends AbstractMenu {
         const rect = this.subMenu.getBoundingClientRect();
         const position = {};
 
-        if (rect.bottom > innerHeight) {
+        if (rect.bottom < innerHeight) {
             position.bottom = 0;
         } else {
             position.top = 0;
